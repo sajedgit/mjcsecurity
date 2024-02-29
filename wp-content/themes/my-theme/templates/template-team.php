@@ -1,3 +1,10 @@
+<?php
+
+/*Template Name: Team*/
+
+get_header();
+?>
+
 
 <?php query_posts(array('post_type' => 'team-post-type')); ?>
 <!-- Page Conttent -->
@@ -9,8 +16,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                     <h2>Our Guards</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
+                     <h2><?php the_title(); ?></h2>
+                     <p><?php the_excerpt(); ?></p>
                     </div>
                 </div>
             </div>
@@ -51,3 +58,7 @@
 
 </main>
 <!--// Page Conttent -->
+
+
+<?php get_footer(); ?>
+
