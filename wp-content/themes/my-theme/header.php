@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
-                    <p>Have any question ? +215 2145 2154 </p>
+                    <p>Have any question ?  (516) 427 0602 </p>
                 </div>
                 <div class="col-lg-6  col-md-6">
                     <ul class="socail-top">
@@ -50,7 +50,7 @@
                 <div class="col-lg-9 d-none d-lg-block">
                     <div class="menu-area d-flex align-items-center justify-content-end">
                         <nav class="main-menu text-center">
-                          <?php wp_nav_menu( array( 'container' => 'ul') ); ?>
+                          <?php wp_nav_menu( array( 'container' => 'ul','depth' => 2) ); ?>
                            <?php /* <ul>
                                 <li class="has-dropdown"><a href="index.html">HOME</a>
                                     <!-- <ul class="sub-menu">

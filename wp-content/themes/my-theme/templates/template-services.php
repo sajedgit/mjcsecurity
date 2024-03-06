@@ -27,7 +27,8 @@ get_header();
                     <div class="service text-center service-2 padding-none cleaning-service mb-30">
                         <div class="thumb">
                             <a href="<?php the_permalink() ?>">
-                                <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="service img">
+                            <?php the_post_thumbnail( 'medium' ); ?>
+                                <!-- <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="service img"> -->
                             </a>
                         </div>
                         <div class="content">
