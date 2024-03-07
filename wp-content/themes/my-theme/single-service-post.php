@@ -55,8 +55,8 @@
 
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="service-details-lg-image">
-                                        <?php the_post_thumbnail( 'large' ); ?>
+                                        <div class="service-details-lg-image text-center">
+                                        <?php the_post_thumbnail( 'medium' ); ?>
                                         </div>
                                         <div class="service-details-cont mt-30">
                                             <h4 class="service-title"><?php the_title(); ?></h4>

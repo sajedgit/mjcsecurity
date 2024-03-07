@@ -50,7 +50,8 @@
                 <div class="col-lg-9 d-none d-lg-block">
                     <div class="menu-area d-flex align-items-center justify-content-end">
                         <nav class="main-menu text-center">
-                          <?php wp_nav_menu( array( 'container' => 'ul','depth' => 2) ); ?>
+                        <?php wp_nav_menu( array( 'container' => 'ul','depth' => 3) ); ?>
+                        <?php //aaa();die();  ?>
                            <?php /* <ul>
                                 <li class="has-dropdown"><a href="index.html">HOME</a>
                                     <!-- <ul class="sub-menu">
@@ -92,7 +93,7 @@
                     </div>
                     
                     <div id="menu" class="text-start clickable-menu-style">
-                    <?php wp_nav_menu( array( 'container' => 'ul') ); ?>
+                    <?php wp_get_menu_array(); ?>
                         <?php /* <ul>
                             <li><a href="index.html">HOME</a>
                                 <!-- <ul>
