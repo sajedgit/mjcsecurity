@@ -21,13 +21,13 @@
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                     <div class="team team-8 mb-30">
                         <div class="thumb">
-                            <a href="#">
+                            <a href="<?php the_permalink(); ?>">
                                 <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="team img">
                             </a>
                         </div>
                         <div class="team-info">
                             <div class="content">
-                                <h4><a href="#"><?php the_title(); ?></a></h4>
+                                <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
                                 <span><?php echo get_post_custom()['designation'][0]; ?></span>
                                 <span><?php the_excerpt(); ?></span>
                             </div>
