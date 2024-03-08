@@ -23,11 +23,11 @@
     <!-- End Choose Us Area -->
     
     <!-- Start Newsletter Style -->
-    <?php get_template_part( 'parts/newsletter' ); ?>
+    <?php //get_template_part( 'parts/newsletter' ); ?>
     <!-- End Newsletter Style  -->
     
     <!-- Start Testimonial Style -->
-    <?php get_template_part( 'parts/testimonial' ); ?>
+    <?php get_template_part( 'parts/our-clients-say' ); ?>
     <!-- End Testimonial Style -->
     
     <!-- start Team Style -->

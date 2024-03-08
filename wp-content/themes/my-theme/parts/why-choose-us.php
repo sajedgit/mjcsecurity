@@ -8,41 +8,23 @@
                         </div>
                         <div class="choose-resone-inner mt-20">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
+                            
                             <!-- Start Single Service -->
+                            <?php query_posts(array('post_type' => 'why-choose-us-post','order'=>'asc')); ?>
+                            <?php while (have_posts()) : the_post(); ?>
                             <div class="service text-start service-6 reapir-service mt-30">
                                 <div class="icons">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/c-01.png" alt="service icons">
+                                    <img src="<?php echo get_the_post_thumbnail_url() ?>" alt="service icons">
                                 </div>
                                 <div class="content">
-                                    <h4>Free Estimate</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. </p>
+                                    <h4><?php the_title(); ?></h4>
+                                    <p><?php echo get_the_content(); ?> </p>
                                 </div>
                             </div>
+                            <?php endwhile; ?>
                             <!-- End Single Service -->
 
-                            <!-- Start Single Service -->
-                            <div class="service text-start service-6 reapir-service">
-                                <div class="icons">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/c-02.png" alt="service icons">
-                                </div>
-                                <div class="content">
-                                    <h4>24/7 Services</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
-
-                            <!-- Start Single Service -->
-                            <div class="service text-start service-6 reapir-service">
-                                <div class="icons">
-                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/icon/c-03.png" alt="service icons">
-                                </div>
-                                <div class="content">
-                                    <h4>Flat Rate Fees</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipi elit sed do eiusmod tempor incididunt ut labor et dolore magna aliqua. </p>
-                                </div>
-                            </div>
-                            <!-- End Single Service -->
+                           
 
                         </div>
                     </div>

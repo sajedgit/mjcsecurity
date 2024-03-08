@@ -15,7 +15,7 @@
                             </div>
                             <div class="content">
                                 <h4><?php the_title(); ?></h4>
-                                <p><?php the_excerpt(); ?></p>
+                                <p><?php the_content(); ?></p>
                             </div>
                         </div>
                     </div>

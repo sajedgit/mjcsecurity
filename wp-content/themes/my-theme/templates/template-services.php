@@ -15,7 +15,7 @@ get_header();
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h2><?php the_title(); ?></h2>
-                        <p><?php the_excerpt(); ?></p>
+                        <p><?php the_content(); ?></p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@ get_header();
                         </div>
                         <div class="content">
                             <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-                            <p><?php the_excerpt(); ?></p>
+                            <p><?php the_content(); ?></p>
                             <a class="readmore_btn btn-transparent" href="<?php the_permalink() ?>">READ MORE</a>
                         </div>
                     </div>

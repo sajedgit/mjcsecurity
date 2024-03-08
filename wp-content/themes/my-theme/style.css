@@ -1497,7 +1497,7 @@ img.mfp-img {
           transform: translate(-50%, 0%);
 }
 .section-title p {
-  max-width: 470px;
+  /* max-width: 470px; */
   margin-top: 16px;
   margin-bottom: 0;
 }
@@ -4294,8 +4294,16 @@ img.mfp-img {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-family: initial;
-  font-size: 3vw;
+  font-size: 2vw;
 
+}
+.main-menu
+{
+  margin-top: -12px!important;
+}
+.cuscol .logo
+{
+  margin: 5px;
 }
 /* If the screen size is 1200px wide or more, set the font-size to 80px
 @media screen and (min-width: 1200px) {

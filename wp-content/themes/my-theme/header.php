@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row align-items-center">
                
-                <div class="col-lg-4 col-md-6 col-6">
+                <div class="col-lg-3 col-md-6 col-6">
                     <div class="cuscol">
                         <div class="logo">
                             <?php if ( function_exists( 'the_custom_logo' ) ) {
@@ -48,7 +48,7 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-8 d-none d-lg-block">
+                <div class="col-lg-8 d-none d-lg-block main-menu">
                     <div class="menu-area d-flex align-items-center justify-content-end">
                         <nav class="main-menu text-center">
                         <?php wp_nav_menu( array( 'container' => 'ul','depth' => 3) ); ?>

@@ -3,9 +3,10 @@
 // use an online version of the css file.
 function add_normalize_CSS() {
 
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+	
 	wp_enqueue_style( 'plugins', get_template_directory_uri() . '/assets/css/plugins.css', array(), '1.1', 'all' );
     wp_enqueue_style( 'normalize-styles', "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css");
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
 	
 
 	wp_enqueue_script( 'plugins', get_template_directory_uri() . '/assets/js/plugins.js', array(), 1.1, true );
@@ -46,7 +47,7 @@ function tw_disable_create_new_post() {
 
 add_action('init','tw_disable_create_new_post'); 
 
-add_theme_support( 'post-thumbnails', array( 'post', 'page' ) );
+add_theme_support( 'post-thumbnails', array( 'post', 'page','our-clients-say-post', 'why-choose-us-post' ) );
 
 
 
@@ -150,8 +151,23 @@ add_theme_support( 'custom-logo', array(
 	}
 	// end of order option in admin grid view
 
-	function my_excerpt_length($length)
-	{
-		return 20;
-	} 
-	add_filter('excerpt_length', 'my_excerpt_length');
+function my_excerpt_length($length)
+{
+	return 20;
+} 
+add_filter('excerpt_length', 'my_excerpt_length');
+
+/** start custom post type placeholder replace */
+function our_clients_say_title_text( $title ){
+	$screen = get_current_screen();
+  
+	if  ( 'our-clients-say-post' == $screen->post_type ) {
+		 $title = 'Client Name';
+	}
+  
+	return $title;
+}
+  
+add_filter( 'enter_title_here', 'our_clients_say_title_text' );
+
+/** end custom post type placeholder replace */
