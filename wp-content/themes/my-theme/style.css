@@ -4327,7 +4327,7 @@ img.mfp-img {
 
 @media screen and (min-width: 480px) and (max-width: 599px){
   .responsive-logo-description {
-    font-size: 20px;
+    font-size: 18px;
   }
   .logo img{
     width: 50px;
@@ -4335,7 +4335,7 @@ img.mfp-img {
 } 
 @media screen and  (max-width: 479px){
   .responsive-logo-description {
-    font-size: 18px;
+    font-size: 16px;
   }
   .logo img{
     width: 40px;

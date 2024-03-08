@@ -1,7 +1,7 @@
 <div class="hero-section section">
 
     <div class="hero-slider hero-slider-one">
-        <div class="hero-slide-item d-flex align-items-center image-bg" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/hero/slide-banner2.jpg)">
+        <div class="hero-slide-item d-flex align-items-center bg-image image-bg" style="background-image: url(<?php echo get_template_directory_uri() ?>/assets/images/hero/slide-banner2.jpg)">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
