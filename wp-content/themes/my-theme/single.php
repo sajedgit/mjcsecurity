@@ -10,7 +10,7 @@
                 <div class="content-here">
                 <?php  the_content();  ?>
                 </div>
-                <div class="comment-section-here"
+                <div class="comment-section-here">
                 <?php //comments_template(); ?>
                 </div>
                 </div>

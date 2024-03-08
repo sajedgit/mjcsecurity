@@ -37,17 +37,18 @@
         <div class="container">
             <div class="row align-items-center">
                
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-4 col-md-6 col-6">
                     <div class="cuscol">
                         <div class="logo">
-                            <a href="<?php bloginfo('url'); ?>">
-                                <img src="<?php echo get_template_directory_uri() ?>/assets/images/logo/logo.png" alt="logo">
-                            </a>
+                            <?php if ( function_exists( 'the_custom_logo' ) ) {
+                                the_custom_logo();
+                            } ?>
+                            <span class="logo-description responsive-logo-description"><?php echo get_bloginfo( 'name' ); ?></span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-9 d-none d-lg-block">
+                <div class="col-lg-8 d-none d-lg-block">
                     <div class="menu-area d-flex align-items-center justify-content-end">
                         <nav class="main-menu text-center">
                         <?php wp_nav_menu( array( 'container' => 'ul','depth' => 3) ); ?>

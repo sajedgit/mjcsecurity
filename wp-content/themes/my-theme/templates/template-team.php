@@ -36,6 +36,7 @@ get_header();
                             <div class="content">
                                 <h4><a href="#"><?php the_title(); ?></a></h4>
                                 <span><?php echo get_post_custom()['designation'][0]; ?></span>
+                                <span><?php the_excerpt(); ?></span>
                             </div>
                             <ul class="social-network social-net-2">
                                 <li><a class="facebook" href="<?php echo get_post_custom()['Facebook'][0]; ?>"><i class="fa fa-facebook"></i></a></li>

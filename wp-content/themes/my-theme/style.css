@@ -59,12 +59,12 @@ body {
   font-style: normal;
   font-weight: normal;
   visibility: visible;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #454545;
   position: relative;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,p,span {
   color: #1d2736;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -1297,8 +1297,8 @@ img.mfp-img {
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #f9b809;
+  color: #ffffff!important;
+  background: #f9b809 !important;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1326,7 +1326,7 @@ img.mfp-img {
   z-index: -1;
 }
 .btn:hover {
-  color: #ffffff;
+  color: #ffffff!important;
   border: 1px solid #1d2736;
 }
 .btn:hover::before {
@@ -1892,7 +1892,7 @@ img.mfp-img {
   color: #f9b809;
 }
 .sub-menu li.menu-item-has-children > a::after {
-  font-family: "themify";
+  font-family: "Montserrat";
   content: "\e649";
   margin-left: 5px;
   float: right;
@@ -4286,3 +4286,32 @@ img.mfp-img {
   background: #f9b809;
   margin: 10px 5px;
 }
+
+.logo-description
+{
+  background: -webkit-linear-gradient(hsl(53, 96%, 44%), #141414);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: initial;
+  font-size: 3vw;
+
+}
+/* If the screen size is 1200px wide or more, set the font-size to 80px
+@media screen and (min-width: 1200px) {
+  .responsive-logo-description {
+    font-size: 32px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+/* @media screen and (max-width: 1199px) and (min-width: 600){
+  .responsive-logo-description {
+    font-size: 28px;
+  }
+} */
+
+/* @media screen and (max-width: 600px){
+  .responsive-logo-description {
+    font-size: 20px;
+  }
+}  */

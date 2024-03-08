@@ -9,13 +9,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title text-center">
-                     <h2>Our Guards</h2>
+                     <h2>CEO</h2>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
                     </div>
                 </div>
             </div>
             <!-- Start Team Area -->
-            <div class="row">
+            <div class="row justify-content-center">
                 <!-- Start Single Team -->
                 <?php while (have_posts()) : the_post(); ?>
                 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
@@ -29,6 +29,7 @@
                             <div class="content">
                                 <h4><a href="#"><?php the_title(); ?></a></h4>
                                 <span><?php echo get_post_custom()['designation'][0]; ?></span>
+                                <span><?php the_excerpt(); ?></span>
                             </div>
                             <ul class="social-network social-net-2">
                                 <li><a class="facebook" href="<?php echo get_post_custom()['Facebook'][0]; ?>"><i class="fa fa-facebook"></i></a></li>

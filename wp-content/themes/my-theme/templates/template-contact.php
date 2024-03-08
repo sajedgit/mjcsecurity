@@ -66,8 +66,7 @@ get_header();
                                 <div class="contact-text d-flex align-items-center">
                                     <i class="fa fa-phone"></i> 
                                     <p>
-                                        <a href="#">+012 345 678 102</a>
-                                        <a href="#">+012 345 678 102</a>
+                                        <a href="#">(516) 427 0602</a>
                                     </p>
                                 </div>
                             </li>
@@ -75,8 +74,7 @@ get_header();
                                 <div class="contact-text d-flex align-items-center">
                                     <i class="fa fa-globe"></i> 
                                     <p>
-                                        <a href="#"> urname@email.com</a>
-                                        <a href="#"> urwebsite@name.com</a>
+                                        <a href="#"> Martincampbell@mjcsecurity.com</a>
                                     </p>
                                 </div>
                             </li>
@@ -84,7 +82,7 @@ get_header();
                                 <div class="contact-text d-flex align-items-center">
                                     <i class="fa fa-map-marker"></i>
                                     <p>
-                                        Address goes here, <br>street, Crossroad 123.
+                                    Baldwin NY 
                                     </p>
                                 </div>
                             </li>

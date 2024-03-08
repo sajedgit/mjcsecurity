@@ -13,7 +13,7 @@
                                 <h2><?php the_title(); ?></h2>
                             </div>
                             <p><?php the_content(); ?></p>
-                            <a href="#" class="btn contact-btn mt-30 btn-circle">CONTACT US </a>
+                            <a href="<?php bloginfo('url'); ?>/contact" class="btn contact-btn mt-30 btn-circle">CONTACT US </a>
                         </div>
                     </div>
                 </div>
