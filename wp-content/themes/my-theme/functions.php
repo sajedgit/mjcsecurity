@@ -161,7 +161,8 @@ add_filter('excerpt_length', 'my_excerpt_length');
 function our_clients_say_title_text( $title ){
 	$screen = get_current_screen();
   
-	if  ( 'our-clients-say-post' == $screen->post_type ) {
+	if  ( 'our-clients-say-post' == $screen->post_type ) 
+	{
 		 $title = 'Client Name';
 	}
   

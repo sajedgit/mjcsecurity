@@ -1779,7 +1779,7 @@ img.mfp-img {
     02. 1 Menu Css
 ---------------------*/
 .main-menu {
-  margin-right: 30px;
+  /* margin-right: 30px; */
 }
 .main-menu > ul {
   display: -webkit-box;
@@ -4294,7 +4294,7 @@ img.mfp-img {
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-family: initial;
-  font-size: 2vw;
+  /* font-size: 2vw; */
 
 }
 .main-menu
@@ -4303,23 +4303,41 @@ img.mfp-img {
 }
 .cuscol .logo
 {
-  margin: 5px;
+  margin:  5px;
 }
-/* If the screen size is 1200px wide or more, set the font-size to 80px
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
 @media screen and (min-width: 1200px) {
   .responsive-logo-description {
     font-size: 32px;
   }
 }
-/* If the screen size is smaller than 1200px, set the font-size to 80px */
-/* @media screen and (max-width: 1199px) and (min-width: 600){
+/* If the screen size is greater than 767px and smaller than 1119px   */
+@media screen and (min-width: 767px) and (max-width: 1199px){
   .responsive-logo-description {
-    font-size: 28px;
+    font-size: 23px;
   }
-} */
+}
 
-/* @media screen and (max-width: 600px){
+/* If the screen size is greater than 600px and smaller than 766   */
+@media screen and (min-width: 600px) and (max-width: 766px){
+  .responsive-logo-description {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px){
   .responsive-logo-description {
     font-size: 20px;
   }
-}  */
+  .logo img{
+    width: 50px;
+  }
+} 
+@media screen and  (max-width: 479px){
+  .responsive-logo-description {
+    font-size: 18px;
+  }
+  .logo img{
+    width: 40px;
+  }
+} 

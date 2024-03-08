@@ -33,7 +33,7 @@ get_header();
                         </div>
                         <div class="content">
                             <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-                            <p><?php the_content(); ?></p>
+                            <p><?php the_excerpt(); ?></p>
                             <a class="readmore_btn btn-transparent" href="<?php the_permalink() ?>">READ MORE</a>
                         </div>
                     </div>

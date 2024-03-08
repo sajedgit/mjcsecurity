@@ -37,18 +37,19 @@
         <div class="container">
             <div class="row align-items-center">
                
-                <div class="col-lg-3 col-md-6 col-6">
+                <div class="col-lg-4 col-md-4  col-sm-6 col-8">
                     <div class="cuscol">
                         <div class="logo">
-                            <?php if ( function_exists( 'the_custom_logo' ) ) {
-                                the_custom_logo();
-                            } ?>
+                            <?php 
+                              $custom_logo_id = get_theme_mod( 'custom_logo' );
+                              $image = wp_get_attachment_image_src( $custom_logo_id, 'full');?>
+                              <a href="<?php bloginfo('url') ?>"><img src="<?php echo $image[0]; ?>" class="img-fluid img-responsive"></a>
                             <span class="logo-description responsive-logo-description"><?php echo get_bloginfo( 'name' ); ?></span>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-lg-8 d-none d-lg-block main-menu">
+                <div class="col-lg-8 col-md-8 col-sm-6 col-6 d-none d-lg-block main-menu">
                     <div class="menu-area d-flex align-items-center justify-content-end">
                         <nav class="main-menu text-center">
                         <?php wp_nav_menu( array( 'container' => 'ul','depth' => 3) ); ?>
@@ -83,7 +84,7 @@
                 </div>
                 
                 <!-- Show in small device Start -->
-                <div class="clickable-menu clickable-mainmenu-active d-block d-lg-none  col-md-6 col-6">
+                <div class="clickable-menu clickable-mainmenu-active d-block d-lg-none  col-md-6 col-4">
                     <a href="#"><i class="zmdi zmdi-menu"></i></a>
                 </div>
                 <div class="clickable-mainmenu">
@@ -121,7 +122,7 @@
                     </div>
                     
                     <div class="mobile-more-info">
-                        <p>Have any question ? +215 2145 2154</p>
+                        <p>Have any question ? (516) 427 0602</p>
                         <ul class="socail-top">
                             <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
                             <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>

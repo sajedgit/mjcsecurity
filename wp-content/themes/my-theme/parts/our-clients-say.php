@@ -4,7 +4,8 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h2>Our Clients Say</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
+                    -->
                     </div>
                 </div>
             </div>

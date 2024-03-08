@@ -7,8 +7,8 @@
                             <h2>Why Choose Us</h2>
                         </div>
                         <div class="choose-resone-inner mt-20">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
-                            
+                            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore</p>
+                             -->
                             <!-- Start Single Service -->
                             <?php query_posts(array('post_type' => 'why-choose-us-post','order'=>'asc')); ?>
                             <?php while (have_posts()) : the_post(); ?>
