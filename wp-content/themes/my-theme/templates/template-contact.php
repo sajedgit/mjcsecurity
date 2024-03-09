@@ -1,7 +1,6 @@
 <?php
-
 /*Template Name: Contact*/
-
+include_once get_template_directory() . '/parts/send-mail.php';
 get_header();
 ?>
 
@@ -11,7 +10,7 @@ get_header();
     
     <!-- Start Google-map Area -->
     <div class="google-map">
-         <div id="googleMap-2" class="embed-responsive-item contact-map" data-lat="40.712776" data-Long="-74.005974"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48424.05501089611!2d-73.65146483956826!3d40.66287513755636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c27b8464639c99%3A0x17629ccbf98966bf!2sBaldwin%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1709937856501!5m2!1sen!2sbd" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <!-- End google-map Area -->
     
@@ -28,7 +27,8 @@ get_header();
                         </div>
                         <div class="form-inner-box-warp">
                             <!-- (You can usr this line) <form id="contact-form" action="assets/php/mail.php">-->
-                            <form id="contact-form" action="http://hasthemes.com/file/mail.php">
+                            <form id="contact-form" action="<?php bloginfo('url') ?>/contact">
+                            <?php  wp_nonce_field( 'submit-form' . get_the_ID() ); ?>
                                 <div class="row">
                                     <div class="col-lg-12 mb-30">
                                         <input name="con_name" type="text" placeholder="Name*">
@@ -98,7 +98,5 @@ get_header();
     
 </main>
 <!--// Page Conttent -->
-<!-- Map js code here -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfmCVTjRI007pC1Yk2o2d_EhgkjTsFVN8"></script>
 
 <?php get_footer() ?>
