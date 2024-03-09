@@ -47,7 +47,7 @@ function tw_disable_create_new_post() {
 
 add_action('init','tw_disable_create_new_post'); 
 
-add_theme_support( 'post-thumbnails', array( 'post', 'page','our-clients-say-post', 'why-choose-us-post' ) );
+add_theme_support( 'post-thumbnails', array( 'post', 'page','gallery-post','our-clients-say-post', 'why-choose-us-post' ) );
 
 
 
@@ -157,18 +157,3 @@ function my_excerpt_length($length)
 } 
 add_filter('excerpt_length', 'my_excerpt_length');
 
-/** start custom post type placeholder replace */
-function our_clients_say_title_text( $title ){
-	$screen = get_current_screen();
-  
-	if  ( 'our-clients-say-post' == $screen->post_type ) 
-	{
-		 $title = 'Client Name';
-	}
-  
-	return $title;
-}
-  
-add_filter( 'enter_title_here', 'our_clients_say_title_text' );
-
-/** end custom post type placeholder replace */
