@@ -23,11 +23,14 @@
                     <p>Have any question ?  (516) 427 0602 </p>
                 </div>
                 <div class="col-lg-6  col-md-6">
+                    <?php $social_icon = wp_get_nav_menu_items('Social Menu'); ?>
                     <ul class="socail-top">
-                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                        <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                        <li><a href="#"><i class="zmdi zmdi-linkedin"></i></a></li>
+                        <?php foreach($social_icon as $social): ?>
+                         <li>
+                            <a href="<?php echo $social->url; ?>"><i class="zmdi zmdi-<?php echo strtolower($social->post_title); ?>"></i></a>
+                        </li>
+                    
+                        <?php endforeach; ?>
                     </ul>
                 </div>
             </div>
