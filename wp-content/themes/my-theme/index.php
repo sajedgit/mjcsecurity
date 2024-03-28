@@ -26,9 +26,9 @@
     <?php //get_template_part( 'parts/newsletter' ); ?>
     <!-- End Newsletter Style  -->
     
-    <!-- Start Testimonial Style -->
+    <!-- Start our-clients-say -->
     <?php get_template_part( 'parts/our-clients-say' ); ?>
-    <!-- End Testimonial Style -->
+    <!-- End our-clients-say -->
     
     <!-- start Team Style -->
     <?php get_template_part( 'parts/team' ); ?>
