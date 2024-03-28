@@ -151,6 +151,10 @@ if(is_home() && is_front_page())
 {
     get_template_part( 'parts/slider' ); 
 }
+else if(is_404())
+{
+
+}
 else
 {
     get_template_part( 'parts/slider-inner' ); 
